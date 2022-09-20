@@ -1,6 +1,6 @@
 I code with PHP and JS
-`PHP - For PocketMine-MP Plugin stuff`
 
+`PHP - For PocketMine-MP Plugin stuff`
 `JavaScript - For Discord Bot/MCBE Script`
 Projects:
 ```yml
