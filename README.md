@@ -1,4 +1,4 @@
-I code with PHP and JS
+I code with PHP and JS (Can't code website stuff 💀)
 
 `PHP - For PocketMine-MP Plugin stuff`
 
