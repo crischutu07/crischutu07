@@ -1,9 +1,4 @@
-Languages: [PHP](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/php/php_16x16.png) ![JavaScript](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/javascript/javascript_16x16.png) and little ![C-Lang](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/c/c_16x16.png) 
-
-`PHP - For PocketMine-MP Plugin stuff`
-
-`JavaScript - For Discord Bot/MCBE Script`
-
+Languages: ![PHP](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/php/php_16x16.png) ![JavaScript](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/javascript/javascript_16x16.png) and little ![C-Lang](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/c/c_16x16.png) 
 Information:
 ```yml
 Name: "crischutu07 (you can call me cris) - SondolaVNXbox"
