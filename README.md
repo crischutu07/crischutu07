@@ -1,4 +1,4 @@
-I code with ![alt text](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/php/php.png) and ![JavaScript](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/javascript/javascript.png) (Can't code website stuff 💀)
+I code with ![alt text](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/php/php_16x16.png) and ![JavaScript](https://github.com/abrahamcalf/programming-languages-logos/raw/master/src/javascript/javascript_16x16.png) (Can't code website stuff 💀)
 
 `PHP - For PocketMine-MP Plugin stuff`
 
