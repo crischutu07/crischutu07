@@ -10,7 +10,7 @@
       "config":"~/.ssh/config"
     },
     ".termux": {
-      "ascii":"~/.termux/ascii",
+      "asciimotd":"~/.termux/asciimotd",
       "ascii44":"~/.termux/ascii44",
       "termux.properties":"~/.termux/termux.properties"
     }
