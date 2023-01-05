@@ -204,7 +204,11 @@ alias rmall="rm -rf"
 alias hi="echo 'Hello World'"
 alias pong="CRIS_PINGFUNC $1"
 alias mk="touch"
+alias topen="termux-open"
+alias topenurl="termux-open-url"
+alias pshell="which $SHELL | grep -oE --color=never 'bash|zsh|sh|fish|csh|ksh'"
 eval $(starship init zsh)
+alias bashrc="eval $EDITOR $PREFIX/etc/bash.bashrc && bash"
 clear
 echo -e "[${Green}*${COL_RESET}] Loaded .zshrc"
 if [[ $(tput cols) -gt 50 ]]; then
