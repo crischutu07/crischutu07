@@ -1,0 +1,91 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Order of modules on prompt
+format = """\
+    ($username )\
+    ($directory )\
+    ($git_branch )\
+    ($git_commit )\
+    ($git_state )\
+    ($git_metrics )\
+    ($character)\
+"""
+
+add_newline = false # disable multiline prompt
+
+
+[directory] # current directory
+style = "fg:40"
+read_only_style = "fg:red"
+repo_root_style = "fg:208"
+truncation_length = 255 # maximum path depth before truncation
+read_only = ""
+truncation_symbol = " "
+use_os_path_sep = true # '/' for Linux/MacOS or other UNIX based systems; '\' for Windows
+use_logical_path = false
+truncate_to_repo = true # change this if you prefer showing the full path
+format = "[$read_only]($read_only_style)[$path]($style)"
+repo_root_format = "[$read_only]($read_only_style)[ $repo_root]($repo_root_style)[$path]($style)"
+
+### Modules for git
+[git_branch] # name of the current git branch
+disabled = false
+# symbol = " " # unused in the current format
+style = "fg:yellow"
+# truncation_length = 4
+# truncation_symbol = ""
+format = "[\\[$branch\\]]($style)"
+
+[git_commit] # current commit hash on detached branch
+disabled = false
+tag_disabled = false
+tag_symbol = "#"
+style = "fg:yellow"
+commit_hash_length = 7
+only_detached = true # Don't show Hash when on regular main branch
+format = "[$tag$hash]($style)"
+
+[git_metrics] # show additions and deletions since last push
+disabled = false
+only_nonzero_diffs = true # set false for testing purposes
+added_style = "fg:green"
+deleted_style = "fg:red"
+format = "[$added]($added_style)[⥮](fg:none)[$deleted]($deleted_style)"
+
+
+[git_state] # progress of the current git operation
+disabled = false
+style = "fg:yellow"
+rebase = "rebasing"
+merge = "merging"
+revert = "reverting"
+cherry_pick = " picking"
+bisect = "bisecting"
+am = "am'ing"
+am_or_rebase = "am/rebase"
+format = "[$state(\\<$progress_current/$progress_total\\>)]($style)"
+
+[git_status] # symbolic and plaintext versions for clairity (if preferred).
+disabled = false
+style = "fg:none"
+stashed = "stashed:${count}"
+staged = "staged:${count}"
+modified = "modified:${count}"
+renamed = "renamed:${count}"
+untracked = "untracked:${count}"
+deleted = "deletions:${count}"
+conflicted = "conflicts:${count}"
+ahead = "ahead:${count}"
+behind = "behind:${count}"
+ diverged = "divergent: ${ahead_count} ${behind_count}"
+format = "[$stashed$staged$modified$renamed$untracked$deleted$conflicted$ahead_behind]($style)"
+
+[username] # the currently logged in user
+disabled = false
+show_always = true
+style_root = "fg:red"
+style_user = "fg:38"
+format = "[$user]($style)"
+[character]
+success_symbol = '[➜](bold green)'
+error_symbol = '[➜](bold yellow)'

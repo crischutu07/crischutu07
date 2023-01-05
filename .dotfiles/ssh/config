@@ -1,0 +1,19 @@
+Host fpt80
+  Hostname 100.74.92.227
+  User crischutu07_fptssh
+  KexAlgorithms +diffie-hellman-group1-sha1
+  HostKeyAlgorithms=+ssh-dss
+
+Host 2gb
+  Hostname 125.212.224.84
+  User cris
+
+Host local
+  Hostname 127.0.0.1
+  User u0_a458
+  Port 8022
+
+Host 4gb
+  Hostname 103.104.119.157
+  User Administrator
+
