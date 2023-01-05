@@ -1,0 +1,19 @@
+{
+  "HOME": {
+    "zshrc": {
+      ".zshrc":"~/.zshrc"
+    },
+    ".config": {
+      "starship.toml":"~/.config/starship.toml"
+    },
+    "ssh": {
+      "config":"~/.ssh/config"
+    },
+    ".termux": {
+      "ascii":"~/.termux/ascii",
+      "ascii44":"~/.termux/ascii44",
+      "asciimotd":"~/.termux/asciimotd"
+      "termux.properties":"~/.termux/termux.properties"
+    }
+  }
+}
