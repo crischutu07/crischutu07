@@ -16,4 +16,6 @@ Host local
 Host 4gb
   Hostname 103.104.119.157
   User Administrator
-
+Host git
+  Hostname github.com
+  User git
