@@ -150,16 +150,21 @@ plugins=(
   git
   zsh-autosuggestions
   zsh-syntax-highlighting
+  command-time
 )
+## command-time plugins
+# If command execution time above min. time, plugins will not output time.
+ZSH_COMMAND_TIME_MIN_SECONDS=1
 
+# Message to display (set to "" for disable).
+ZSH_COMMAND_TIME_MSG="Time: %s"
+
+# Message color.
+ZSH_COMMAND_TIME_COLOR="white"
+
+# Exclude some commands
+ZSH_COMMAND_TIME_EXCLUDE=(vim mcedit)
 source $ZSH/oh-my-zsh.sh
-
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
@@ -170,11 +175,13 @@ fi
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
+# make new bash files for neovim and include bash shebang
 CRIS_NEWSHELL (){
   echo '#!/data/data/com.termux/files/usr/bin/bash' > $1.sh
   chmod +x $1.sh
   $EDITOR $1.sh
 }
+# easy ping
 CRIS_PINGFUNC (){
   if [[ $1 == "" ]]; then
     ping -c 10 -i 0.2 8.8.8.8
@@ -182,12 +189,6 @@ CRIS_PINGFUNC (){
     ping -c 10 -i 0.2 $1
   fi
 }
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
 echo "[*] Loading alias"
 alias zshrc="$EDITOR ~/.zshrc && omz reload"
 alias ohmyzsh="cd ~/.oh-my-zsh"

@@ -6,7 +6,6 @@ Host fpt80
 
 Host 2gb
   Hostname 125.212.224.84
-  User cris
 
 Host local
   Hostname 127.0.0.1
