@@ -8,4 +8,4 @@ This app making me better to code in a Terminal, also I was code my Project into
 # Programming language I use
 <a href="https://python.org"><img src="icon/python.svg" alt="Python" width="40"></a> <a href="https://www.gnu.org/software/bash/"><img src="icon/bash.svg" alt="GNU Bash" width="40"></a> <a href="https://cprogramming.com"><img src="icon/c.svg" alt="C Language" width="40"></a> <a href="https://php.org"><img src="icon/php.png" alt="PHP" width="40"/></a>
 # What I learn next: 
-<a href="https://kotlinlang.com"><img src="icon/kotlin.svg" alt="Kotlin Language" width="40"/></a>
+<a href="https://kotlinlang.org"><img src="icon/kotlin.svg" alt="Kotlin Language" width="40"/></a>
