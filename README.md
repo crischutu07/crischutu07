@@ -7,6 +7,6 @@ I explore this website since 2020 when I was 13 years old. I was enough to code 
 This app making me better to code in a Terminal, also I was code my Project into that. Then I moved to making Bash script when I was 12 years old.
 # Programming language I use 
 <!--- Here we have Python, Bash, C, PHP, JS --->
-<a href="https://python.org"><img src="icon/python.svg" alt="Python" width="40"></a> <a href="https://www.gnu.org/software/bash/"><img src="icon/bash.svg" alt="GNU Bash" width="40"></a> <a href="https://cprogramming.com"><img src="icon/c.svg" alt="C Language" width="40"></a> <a href="https://php.org"><img src="icon/php.png" alt="PHP" width="40"/></a> <a href="https://javascript.com"><img src="icon/javascript.png" alt="JavaScript" width="40"></a> 
+<a href="https://python.org"><img src="icon/python.svg" alt="Python" width="40"></a> <a href="https://www.gnu.org/software/bash/"><img src="icon/bash.svg" alt="GNU Bash" width="40"></a> <a href="https://cprogramming.com"><img src="icon/c.svg" alt="C Language" width="40"></a> <a href="https://php.org"><img src="icon/php.png" alt="PHP" width="40"/></a> <a href="https://javascript.com"><img src="icon/javascript.svg" alt="JavaScript" width="40"></a> 
 # What I learn next: ()
 <a href="https://kotlinlang.org"><img src="icon/kotlin.svg" alt="Kotlin Language" width="40"/></a>
