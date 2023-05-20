@@ -1,7 +1,6 @@
-" Import Plugins (Vundle)
+" let g:airline#extensions#tabline#formatter = 'default'Import Plugins (Vundle)
 set nocompatible              " be iMproved, required
 filetype off                  " required
-
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -46,10 +45,18 @@ filetype plugin indent on    " required
 
 " Import Plugins
 call plug#begin('~/.vim/plugged')
+Plug 'ap/vim-css-color'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'jiangmiao/auto-pairs'
 Plug 'mattn/emmet-vim' " Emmet 
+Plug 'ycm-core/YouCompleteMe'
+Plug 'skywind3000/vim-dict'
+Plug 'skywind3000/vim-auto-popmenu'
 Plug 'sonph/onehalf', { 'rtp': 'vim' } " Scheme Background and syntax highlight
 Plug 'mhinz/vim-tree'
+Plug 'vim-scripts/AutoComplPop'
+Plug 'kien/ctrlp.vim'
 " Language Server
 Plug 'mattn/vim-lsp-settings'
 " Auto Complete
@@ -77,12 +84,18 @@ endif
 call plug#end()
 " Basic config
 colorscheme onehalfdark
+let g:apc_enable_ft = 1
 set encoding=utf-8
 set nu
+let g:airline#extensions#tabline#enabled = 1
 " Tab and Space indentcation
 set tabstop=2
 set shiftwidth=2
 set softtabstop=0 noexpandtab
+set shortmess=at
+set nostartofline
+set virtualedit=all
+
 " Auto Completion Pop up
 cnoreabbrev sc ShellCheck
 cnoreabbrev pkg PlugInstall
@@ -91,9 +104,10 @@ set completeopt=menuone,longest
 "Some code bruh
 " AsyncComplete tab
 let g:asyncomplete_auto_popup = 1
-"inoremap <expr> <Tab>   pumvisible() ? "\<C-n>" : "\<Tab>""
-"inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-" inoremap <expr> <cr>    pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+inoremap <expr> <S-Tab>pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr>pumvisible() ? asyncomplete#close_popup() : "\<cr>"
+inoremap <expr> <TAB> pumvisible() ? "\<C-y>" : "\<CR>"
+nnoremap <silent> <C-c> :<C-u>normal! 0w<CR>
 
 let g:ycm_python_interpreter_path = ''
 let g:ycm_python_sys_path = []
@@ -102,3 +116,18 @@ let g:ycm_extra_conf_vim_data = [
   \  'g:ycm_python_sys_path'
   \]
 let g:ycm_global_ycm_extra_conf = '~/.vim/global_extra_conf.py'
+
+" enable this plugin for filetypes, '*' for all files.
+let g:apc_enable_ft = {'text':1, 'markdown':1, 'php':1}
+
+" source for dictionary, current or other loaded buffers, see ':help cpt'
+set cpt=.,k,w,b
+
+" don't select the first item.
+set completeopt=menu,menuone,noselect
+
+" suppress annoy messages.
+set shortmess+=c
+let g:apc_enable = 0
+let g:ycm_filetype_blacklist = {'text':1, 'markdown':1, 'php':1}
+let g:apc_enable_ft = {'text':1, 'markdown':1, 'php':1}
