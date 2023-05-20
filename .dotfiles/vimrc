@@ -95,7 +95,7 @@ set softtabstop=0 noexpandtab
 set shortmess=at
 set nostartofline
 set virtualedit=all
-
+let g:apc_cr_confirm = 1
 " Auto Completion Pop up
 cnoreabbrev sc ShellCheck
 cnoreabbrev pkg PlugInstall
