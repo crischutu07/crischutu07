@@ -1,5 +1,4 @@
 # Hello There 👋
-![](https://komarev.com/ghpvc/?username=crischutu07&color=green)
 
 Hello There 👋, I'm crischutu07, I'm 15 years old and I make random stuff on here, I'm from Vietnam you can contact me by DM'ing me on Discord `crischutu07#0001` (2fa locked)
 # Where did I started here?
