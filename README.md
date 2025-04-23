@@ -1,3 +1,1 @@
-Everything is open source.
-
-![crischutu07's GitHub stats](https://github-readme-stats.vercel.app/api?username=crischutu07&show_icons=true&theme=transparent)
+I also do code besides playing Minecraft
